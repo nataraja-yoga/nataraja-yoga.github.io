@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- #bbinclude "include_meta.html" -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="BBEdit 13.5" />
+<!-- end bbinclude -->
+	<title>Nataraja Yoga</title>
+<!-- #bbinclude "include_link.html" -->
+	<link href="/styles.css" rel="stylesheet" type="text/css" media="screen">
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<!-- end bbinclude -->
+</head>
+<body>
+	<div class="header">
+		<h1>Nataraja Yoga</h1>
+	</div>
+
+<!-- #bbinclude "include_nav.html" -->
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="schedule.html">Schedule</a>
+		<a href="email_list.html">Email List</a>
+		<a href="contact.html">Contact</a>
+	</div>
+<!-- end bbinclude -->
+
+	<div class="row">
+<!-- #bbinclude "include_imageColumn.html" -->
+		<div class = "imageColumn"><img alt="nataraja_web_500h" src="images/nataraja_web_500h.jpg" width="333" height="500"></div>
+<!-- end bbinclude -->
+		<div class = "copyColumn">
+			<h2>Email List</h2>
+			<p>This is a low volume email list for class logistics. If you choose to sign up you will automatically be emailed the information for joining zoom classes. If you choose not to sign up just <a href="contact.html">contact me</a> and I will send you the information.</p>
+<!-- Begin Mailchimp Signup Form -->
+			<form action="https://facebook.us7.list-manage.com/subscribe/post?u=9dc256c97fc9f62d15fb25bdb&amp;id=b64293a551" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9dc256c97fc9f62d15fb25bdb_b64293a551" tabindex="-1" value=""></div>
+				<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+
+				<label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+				<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+
+				<label for="mce-LNAME">Last Name </label>
+				<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+
+				<label for="mce-BIRTHDAY-month">Birthday </label>
+				<div>
+					<input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"> / 
+					<input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"> 
+					( mm / dd )
+				</div>
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+			</form>
+			<div id="error_email" class="errorMessage" style="display:none;">
+				<p>Email address is required.</p>
+			</div>
+			<div id="error_first_name" class="errorMessage" style="display:none;">
+				<p>First Name is required.</p>
+			</div>
+			<div id="success" class="successMessage" style="display:none;">
+				<p>Thank you for signing up!</p>
+			</div>
+<!-- End Mailchimp Signup Form -->
+		</div>
+	</div>
+<!-- #bbinclude "include_footer.html" -->
+	<div class = "footer">
+		<h2>Footer</h2>
+	</div>
+<!-- end bbinclude -->
+<script src="/scripts/email_list.js"></script>
+<script>
+document.getElementById("error_email").display = none;
+document.getElementById("error_first_name").display = none;
+document.getElementById("success").display = none;
+</script>
+</body>
+</html>

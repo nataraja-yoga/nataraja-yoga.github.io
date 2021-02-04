@@ -1,0 +1,126 @@
+/*
+	Color Definitions
+ */
+:root {
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+	--color-red: #FF0000;
+
+	--color-burgundy: #5D3747;
+	--color-sage: #747A65;
+	--color-moss: #7CA99C;
+	--color-mustard: #9B7D3A;
+	--color-dark-mustard: #83693A;
+}
+
+/*
+	General Styles
+ */
+body {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+p {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 20px;
+}
+a {
+	font-family: 'Noto Sans JP', sans-serif;
+	color: var(--color-moss);
+	text-decoration: none;
+	font-weight: bold;
+}
+h1,h2,h3 {
+	font-family: 'Merriweather', serif;
+	color: var(--color-black);
+}
+
+/*
+	Page Header, Navigation, Footer
+ */
+.header {
+	text-align: center;
+}
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 20px;
+}
+.footer {
+	text-align: center;
+}
+
+
+/*
+	Two Column Layout
+ */
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+/*	align-content: start;
+	max-width: 1000px;
+	flex-wrap: wrap-reverse;*/
+}
+.imageColumn {
+	width: flex;
+	padding-left: 20px;
+}
+.copyColumn {
+	width: flex;
+	padding-left: 50px;
+	padding-right: 20px;
+}
+
+
+/*
+	Forms
+ */
+form {
+	display: grid;
+	grid-template-columns: 120px 1fr;
+	grid-gap:  5px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+label {
+	grid-column: 1 / 2;
+}
+input, button {
+	grid-column: 2 / 3;
+}
+textarea {
+	grid-column: 2 / 3;
+	width: 300px;
+	height: 100px;
+}
+
+/*
+	Email List Form
+ */
+
+.asterisk {
+	color: var(--color-red);
+}
+.errorMessage {
+	text-align: center;
+	font-weight: bold;
+	color: var(--color-red);
+}
+.successMessage {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Media query to set website layout  
+according to screen size 
+@media screen and (max-width:600px) { 
+	.imageColumn, .copyColumn { 
+		width: 50%;
+	} 
+} 
+@media screen and (max-width:400px) { 
+	.imageColumn, .copyColumn { 
+		width: 100%; 
+	} 
+}
+*/
