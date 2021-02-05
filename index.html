@@ -20,11 +20,32 @@
 
 <!-- #bbinclude "include_nav.html" -->
 	<div class="nav">
-		<a href="index.html">Home</a>
-		<a href="schedule.html">Schedule</a>
-		<a href="email_list.html">Email List</a>
-		<a href="contact.html">Contact</a>
+		<a id="navHome" href="index.html">Home</a>
+		<a id="navSchedule" href="schedule.html">Schedule</a>
+		<a id="navEmail" href="email_list.html">Email List</a>
+ 		<a id="navContact" href="contact.html">Contact</a>
 	</div>
+
+	<script type="text/javascript">
+	
+	
+		let nav_home = "navHome";
+		let nav_schedule = "navSchedule";
+		let nav_email = "navEmail";
+		let nav_contact = "navContact"
+
+		let navMap = new Map([
+			[nav_home, document.getElementById(nav_home)],
+			[nav_schedule, document.getElementById(nav_schedule)],
+			[nav_email, document.getElementById(nav_email)],
+			[nav_contact, document.getElementById(nav_contact)]
+		]);
+
+		console.log("nav_home: " + nav_home);
+		console.log("navMap: " + navMap);
+
+	
+	</script>
 <!-- end bbinclude -->
 
 	<div class="row">

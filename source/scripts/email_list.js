@@ -1,9 +1,19 @@
-function ValidateEmail(mail) 
+
+
+
+function ValidateEmail(inputText)
 {
- if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mc-embedded-subscribe-form.mce-EMAIL.value))
-  {
-    return (true)
-  }
-    alert("You have entered an invalid email address!")
-    return (false)
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+if(inputText.value.match(mailformat))
+{
+	alert("Valid email address!");
+	document.form1.text1.focus();
+	return true;
+}
+else
+{
+	alert("You have entered an invalid email address!");
+	document.form1.text1.focus();
+return false;
+}
 }

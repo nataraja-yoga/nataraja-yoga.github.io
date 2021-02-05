@@ -41,14 +41,21 @@ h1,h2,h3 {
 .header {
 	text-align: center;
 }
+.footer {
+	text-align: right;
+}
+
+
 .nav {
 	display: flex;
 	justify-content: space-evenly;
 	padding-bottom: 20px;
 }
-.footer {
-	text-align: right;
+
+a.navBreadcrumb {
+	color: var(--color-burgundy);
 }
+
 
 
 /*
