@@ -35,19 +35,19 @@
 			<h2>Contact Gerry</h2>
 			
 			<form action="https://getsimpleform.com/messages?form_api_token=243f6ca0f57bf01f0de7c97b19614e16" method="post">
-				<input type='hidden' name='redirect_to' value='contact_success.html' />
+				<input type='hidden' name='redirect_to' value='/contact_success.html' />
 
 				<label for="firstName">First Name</label>
-				<input id="firstName" type="text" />
+				<input id="firstName" name="firstName" type="text" />
 
 				<label for="lastName">Last Name</label>
-				<input id="lastName" type="text" />
+				<input id="lastName" name="lastName" type="text" />
 
 				<label for="email">Email Address</label>
-				<input id="email" type="text" />
+				<input id="email" name="email" type="text" />
 
 				<label for="message">Message</label>
-				<textarea id="message"></textarea>
+				<textarea id="message" name="message"></textarea>
 
 				<input type='submit' value='Send Message' />
 			</form>
