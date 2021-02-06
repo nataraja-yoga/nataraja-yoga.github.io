@@ -21,25 +21,30 @@ body {
 	color: var(--color-blue);
 }
 p {
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 100;
-	font-size: 20px;
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	font-size: 18px;
 }
 a {
-	font-family: 'Noto Sans JP', sans-serif;
-	color: var(--color-green);
+	font-family: 'Noto Serif', serif;
+	color: var(--color-orange);
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 400;
 }
 h1 {
 	font-family: 'Noto Serif', serif;
 	font-weight: 700;
+	font-size: 48px;
 	color: var(--color-blue);
 }
-
-h2,h3 {
-	font-family: 'Noto Serif', serif;
+h2 {
+	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
+	color: var(--color-blue);
+}
+h3 {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
 	color: var(--color-blue);
 }
 
@@ -65,13 +70,13 @@ h2,h3 {
 }
 
 a.navItem {
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
+	color: var(--color-blue);
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 22px;
 }
 
 a.navBreadcrumb {
-	color: var(--color-orange);
+	color: var(--color-green);
 }
 
 
@@ -83,9 +88,6 @@ a.navBreadcrumb {
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
-/*	align-content: start;
-	max-width: 1000px;
-	flex-wrap: wrap-reverse;*/
 }
 .imageColumn {
 	width: flex;
@@ -96,14 +98,13 @@ a.navBreadcrumb {
 	padding-left: 50px;
 	padding-right: 20px;
 }
-
-
-/*
-	Index Page
- */
-.flex {
+.flexSpaceBetween {
  display: flex;
  justify-content: space-between;
+}
+.flexSpaceEvenly {
+ display: flex;
+ justify-content: space-evenly;
 }
 
 
@@ -114,7 +115,7 @@ form {
 	display: grid;
 	grid-template-columns: 120px 1fr;
 	grid-gap:  5px;
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Noto Serif', serif;
 }
 label {
 	grid-column: 1 / 2;
@@ -124,8 +125,6 @@ input, button {
 }
 textarea {
 	grid-column: 2 / 3;
-	width: 300px;
-	height: 100px;
 }
 
 /*
