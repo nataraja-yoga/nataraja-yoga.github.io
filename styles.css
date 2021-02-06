@@ -5,17 +5,20 @@
 	--color-black: #000000;
 	--color-white: #FFFFFF;
 
+/* 
 	--color-blue: #264653;
 	--color-yellow: #e9c46a;
+	--color-green: #2a9d8f;
+	--color-orange: #f4a261;
+ */
+
+	--color-red: #e76f51;
 	
 	--color-apache: #DCBB73;
 	--color-eternity: #1D140B;
 	--color-congress-blue: #044F93;
 	--color-avocado: #868F67;
 
-	--color-green: #2a9d8f;
-	--color-orange: #f4a261;
-	--color-red: #e76f51;
 	
 	
 }
@@ -48,7 +51,8 @@ h1 {
 }
 h2 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 24px;
 	color: var(--color-eternity);
 }
 
@@ -130,15 +134,11 @@ a.navBreadcrumb {
 	grid-template-columns: 160px 200px 200px;
 	row-gap:  5px;
 	column-gap:  20px;
+	padding-bottom: 30px;
 
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
-
-	padding-bottom: 30px;
-/* 
-	padding-top: 30px;
- */
 }
 .classDay {
 	grid-column: 1 / 2;
@@ -205,17 +205,3 @@ textarea {
 	text-align: center;
 	font-weight: 300;
 }
-
-/* Media query to set website layout  
-according to screen size 
-@media screen and (max-width:600px) { 
-	.imageColumn, .copyColumn { 
-		width: 50%;
-	} 
-} 
-@media screen and (max-width:400px) { 
-	.imageColumn, .copyColumn { 
-		width: 100%; 
-	} 
-}
-*/
