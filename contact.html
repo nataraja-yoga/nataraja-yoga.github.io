@@ -60,19 +60,19 @@
 			<form action="https://getsimpleform.com/messages?form_api_token=243f6ca0f57bf01f0de7c97b19614e16" method="post">
 				<input type='hidden' name='redirect_to' value='https://nataraja-yoga.github.io/contact_success.html' />
 
-				<label for="firstName">First Name</label>
-				<input id="firstName" name="firstName" type="text" />
-
-				<label for="lastName">Last Name</label>
-				<input id="lastName" name="lastName" type="text" />
-
-				<label for="email">Email Address</label>
+				<label for="email"><span class="asterisk">*</span> Email Address: </label>
 				<input id="email" name="email" type="text" />
 
-				<label for="message">Message</label>
+				<label for="firstName"><span class="asterisk">*</span> First Name: </label>
+				<input id="firstName" name="firstName" type="text" />
+
+				<label for="lastName">Last Name: </label>
+				<input id="lastName" name="lastName" type="text" />
+
+				<label for="message">Message: </label>
 				<textarea id="message" name="message" rows="10"></textarea>
 
-				<input type='submit' value='Send Message' />
+				<input class="button" type='submit' value='Send Message' />
 			</form>
 			<div id="error_email" class="errorMessage" style="display:none;">
 				<p>Email address is required.</p>

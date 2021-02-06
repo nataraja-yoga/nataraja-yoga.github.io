@@ -68,6 +68,9 @@ a.navItem {
 	font-size: 26px;
 	color: var(--color-eternity);
 }
+a.navItem:hover {
+	color: var(--color-apache);
+}
 a.navBreadcrumb {
 	color: var(--color-apache);
 }
@@ -151,11 +154,12 @@ a.navBreadcrumb {
 form {
 	display: grid;
 	grid-template-columns: 130px 1fr;
-	grid-gap:  5px;
+	grid-gap:  10px;
 	font-family: 'Raleway', sans-serif;
 }
 label {
 	grid-column: 1 / 2;
+	text-align: right;
 }
 input, button {
 	grid-column: 2 / 3;
@@ -163,6 +167,18 @@ input, button {
 textarea {
 	grid-column: 2 / 3;
 }
+.button {
+	background-color: var(--color-apache);
+	color: var(--color-congress-blue);
+	border: none;
+	padding: 15px 32px;
+	justify-self: center;
+	
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
 
 /*
 	Email List Form
