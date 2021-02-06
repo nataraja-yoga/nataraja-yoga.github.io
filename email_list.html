@@ -5,12 +5,34 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="generator" content="BBEdit 13.5" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png" />
 <!-- end bbinclude -->
 	<title>Nataraja Yoga</title>
 <!-- #bbinclude "include_link.html" -->
 	<link href="/styles.css" rel="stylesheet" type="text/css" media="screen">
-	<link rel="preconnect" href="https://fonts.gstatic.com"> 
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="/images/icons/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/images/icons/favicon-128.png" sizes="128x128" />
 <!-- end bbinclude -->
 </head>
 <body>
@@ -20,32 +42,12 @@
 
 <!-- #bbinclude "include_nav.html" -->
 	<div class="nav">
-		<a id="navHome" href="index.html">Home</a>
-		<a id="navSchedule" href="schedule.html">Schedule</a>
-		<a id="navEmail" href="email_list.html">Email List</a>
- 		<a id="navContact" href="contact.html">Contact</a>
+		<a class="navItem" id="navHome" href="index.html">Home</a>
+		<a class="navItem" id="navSchedule" href="schedule.html">Schedule</a>
+		<a class="navItem" id="navEmail" href="email_list.html">Email List</a>
+ 		<a class="navItem" id="navContact" href="contact.html">Contact</a>
 	</div>
-
-	<script type="text/javascript">
-	
-	
-		let nav_home = "navHome";
-		let nav_schedule = "navSchedule";
-		let nav_email = "navEmail";
-		let nav_contact = "navContact"
-
-		let navMap = new Map([
-			[nav_home, document.getElementById(nav_home)],
-			[nav_schedule, document.getElementById(nav_schedule)],
-			[nav_email, document.getElementById(nav_email)],
-			[nav_contact, document.getElementById(nav_contact)]
-		]);
-
-		console.log("nav_home: " + nav_home);
-		console.log("navMap: " + navMap);
-
-	
-	</script>
+	<script src="/scripts/nav.js"></script>
 <!-- end bbinclude -->
 
 	<div class="row">
@@ -53,8 +55,7 @@
 		<div class = "imageColumn"><img alt="nataraja_web_500h" src="images/nataraja_web_500h.jpg" width="333" height="500"></div>
 <!-- end bbinclude -->
 		<div class = "copyColumn">
-			<h2>Email List</h2>
-			<p>This is a low volume email list for class logistics. If you choose to sign up you will automatically be emailed the information for joining zoom classes. If you choose not to sign up just <a href="contact.html">contact me</a> and I will send you the information.</p>
+			<p>This is a low volume email list for class logistics. If you choose to sign up you will automatically be emailed the information for joining zoom classes. If you'd rather not sign up just <a href="contact.html">contact me</a> and I will send you the information.</p>
 <!-- Begin Mailchimp Signup Form -->
 			<form action="https://facebook.us7.list-manage.com/subscribe/post?u=9dc256c97fc9f62d15fb25bdb&amp;id=b64293a551" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -70,8 +71,8 @@
 
 				<label for="mce-BIRTHDAY-month">Birthday </label>
 				<div>
-					<input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"> / 
-					<input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"> 
+					<input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="3" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"> / 
+					<input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="3" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"> 
 					( mm / dd )
 				</div>
 				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
@@ -94,11 +95,9 @@
 		<a href="https://www.facebook.com/NatarajaYogaUSA/" target="_blank"><img width="48" height="48" alt="Facebook Link" src="images/fb.png"></a>
 	</div>
 <!-- end bbinclude -->
-<script src="/scripts/email_list.js"></script>
-<script>
-document.getElementById("error_email").display = none;
-document.getElementById("error_first_name").display = none;
-document.getElementById("success").display = none;
-</script>
+	<script src="/scripts/email_list.js"></script>
+	<script type="text/javascript">
+		setNavBreadcrumb(NAV_EMAIL);
+	</script>
 </body>
 </html>

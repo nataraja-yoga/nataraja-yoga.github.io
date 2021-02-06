@@ -4,13 +4,13 @@
 :root {
 	--color-black: #000000;
 	--color-white: #FFFFFF;
-	--color-red: #FF0000;
 
-	--color-burgundy: #5D3747;
-	--color-sage: #747A65;
-	--color-moss: #7CA99C;
-	--color-mustard: #9B7D3A;
-	--color-dark-mustard: #83693A;
+	--color-blue: #264653;
+	--color-green: #2a9d8f;
+	--color-yellow: #e9c46a;
+	--color-orange: #f4a261;
+	--color-red: #e76f51;
+	
 }
 
 /*
@@ -18,25 +18,34 @@
  */
 body {
 	background-color: var(--color-white);
-	color: var(--color-black);
+	color: var(--color-blue);
 }
 p {
 	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 100;
 	font-size: 20px;
 }
 a {
 	font-family: 'Noto Sans JP', sans-serif;
-	color: var(--color-moss);
+	color: var(--color-green);
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 300;
 }
-h1,h2,h3 {
-	font-family: 'Merriweather', serif;
-	color: var(--color-black);
+h1 {
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	color: var(--color-blue);
 }
 
+h2,h3 {
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	color: var(--color-blue);
+}
+
+
 /*
-	Page Header, Navigation, Footer
+	Page Header, Footer
  */
 .header {
 	text-align: center;
@@ -46,14 +55,23 @@ h1,h2,h3 {
 }
 
 
+/*
+	Navigation
+ */
 .nav {
 	display: flex;
 	justify-content: space-evenly;
 	padding-bottom: 20px;
 }
 
+a.navItem {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
 a.navBreadcrumb {
-	color: var(--color-burgundy);
+	color: var(--color-orange);
 }
 
 
@@ -77,6 +95,15 @@ a.navBreadcrumb {
 	width: flex;
 	padding-left: 50px;
 	padding-right: 20px;
+}
+
+
+/*
+	Index Page
+ */
+.flex {
+ display: flex;
+ justify-content: space-between;
 }
 
 
@@ -110,12 +137,12 @@ textarea {
 }
 .errorMessage {
 	text-align: center;
-	font-weight: bold;
+	font-weight: 300;
 	color: var(--color-red);
 }
 .successMessage {
 	text-align: center;
-	font-weight: bold;
+	font-weight: 300;
 }
 
 /* Media query to set website layout  
