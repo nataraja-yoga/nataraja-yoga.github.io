@@ -113,7 +113,7 @@ a.navBreadcrumb {
  */
 form {
 	display: grid;
-	grid-template-columns: 120px 1fr;
+	grid-template-columns: 130px 1fr;
 	grid-gap:  5px;
 	font-family: 'Noto Serif', serif;
 }
