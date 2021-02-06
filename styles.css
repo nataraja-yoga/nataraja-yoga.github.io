@@ -104,6 +104,16 @@ a.navBreadcrumb {
 	flex-direction: column;
 }
 
+
+/* 
+	Index Page
+ */
+.gerryPhoto {
+ display: flex;
+ justify-content: space-between;
+}
+
+
 /* 
 	Class List
  */
