@@ -53,30 +53,41 @@
 		<div class = "imageColumn"><img alt="nataraja_web_500h" src="images/nataraja_web_500h.jpg" width="333" height="500"></div>
 <!-- end bbinclude -->
 		<div class = "copyColumn">
-			<p class="noTopMargin">This is a low volume email list for class logistics. If you choose to sign up you will automatically be emailed the information for joining zoom classes.</p>
-			<p>If you'd rather not sign up or if you signed up and didn't immediately get the email, please <a href="contact.html">contact me</a> and I will send you the information!</p>
-<!-- Begin Mailchimp Signup Form -->
-			<form action="https://facebook.us7.list-manage.com/subscribe/post?u=9dc256c97fc9f62d15fb25bdb&amp;id=b64293a551" method="post" target="_blank">
-				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9dc256c97fc9f62d15fb25bdb_b64293a551" tabindex="-1" value=""></div>
-				<label for="mce-EMAIL"><span class="asterisk">*</span> Email Address:</label>
-				<input type="email" name="EMAIL" id="mce-EMAIL" required>
+			<div id="state_form">
+				<p class="noTopMargin">This is a low volume email list for class logistics. If you choose to sign up you will automatically be emailed the information for joining zoom classes and can unsubscribe at any time.</p>
+				<p>If you'd rather not sign up or if you signed up and didn't immediately get the email, please <a href="contact.html">contact me</a> and I will send you the information!</p>
+				<!-- Begin Mailchimp Signup Form -->
+				<form class="formCopy" action="https://facebook.us7.list-manage.com/subscribe/post?u=9dc256c97fc9f62d15fb25bdb&amp;id=b64293a551" method="post" target="_blank" onsubmit="displaySubmittedState()">
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9dc256c97fc9f62d15fb25bdb_b64293a551" tabindex="-1" value=""></div>
+					<label for="mce-EMAIL"><span class="asterisk">*</span> Email Address:</label>
+					<input type="email" name="EMAIL" id="mce-EMAIL" required>
 
-				<label for="mce-FNAME"><span class="asterisk">*</span> First Name:</label>
-				<input type="text" name="FNAME" id="mce-FNAME" required>
+					<label for="mce-FNAME"><span class="asterisk">*</span> First Name:</label>
+					<input type="text" name="FNAME" id="mce-FNAME" required>
 
-				<label for="mce-LNAME">Last Name:</label>
-				<input type="text" value="" name="LNAME"id="mce-LNAME">
+					<label for="mce-LNAME">Last Name:</label>
+					<input type="text" value="" name="LNAME"id="mce-LNAME">
 
-				<label for="mce-BIRTHDAY-month">Birthday:</label>
-				<div>
-					<input type="text" pattern="[0-9]*" value="" placeholder="MM" size="3" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"> / 
-					<input type="text" pattern="[0-9]*" value="" placeholder="DD" size="3" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"> 
-					( mm / dd )
-				</div>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onsubmit="document.getElementById(b64293a551).reset()">
-			</form>
-<!-- End Mailchimp Signup Form -->
+					<label for="mce-BIRTHDAY-month">Birthday:</label>
+					<div>
+						<input type="text" pattern="[0-9]*" value="" placeholder="MM" size="3" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"> / 
+						<input type="text" pattern="[0-9]*" value="" placeholder="DD" size="3" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"> 
+						( mm / dd )
+					</div>
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+				<p class="formCopy"><span class="asterisk">*</span> indicates required field.</p>
+				<!-- End Mailchimp Signup Form -->
+			</div>
+
+			<div id="state_submitted" style="display: none">
+				<h2 class="noTopMargin">Thank You!</h2>
+				<p>You have been subscribed. If you don't immediately get the class information, please <a href="contact.html">contact me</a> and I'll send it over asap.</p>
+				<p>Gerry</p>
+			</div>
+
+
 		</div>
 	</div>
 <!-- #bbinclude "include_footer.html" -->
@@ -87,6 +98,11 @@
 <!-- end bbinclude -->
 	<script type="text/javascript">
 		setNavBreadcrumb(NAV_EMAIL);
+		
+		function displaySubmittedState() {
+			document.getElementById("state_form").style.display = "none";
+			document.getElementById("state_submitted").style.display = "block";
+		}
 	</script>
 </body>
 </html>
