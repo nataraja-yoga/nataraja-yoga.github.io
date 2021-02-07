@@ -26,8 +26,12 @@
 /*
 	General Styles
 	
-	Cinzel:wght@400;500;600;700;800;900
-	Raleway:wght@100;200;300;400;500;600;700;800;900
+	Cinzel:wght@;500;;700;800;900
+	600 400 
+
+	Raleway:wght@100;200;300;;500;600;;800;900
+	
+	400 700 
 */
 body {
 	background-color: var(--color-white);
@@ -162,7 +166,9 @@ form {
 	grid-template-columns: 130px 1fr;
 	grid-gap:  10px;
 	padding-top: 30px;
+
 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
 }
 label {
 	grid-column: 1 / 2;
@@ -189,20 +195,18 @@ textarea {
 .button:hover {
 	opacity: 1;
 }
-
-/*
-	Email List Form
- */
-
+input:invalid {
+  border: 1px solid var(--color-red);
+}
+input:valid {
+  border: 1px solid var(--color-eternity);
+}
+textarea:invalid {
+  border: 1px solid var(--color-red);
+}
+textarea:valid {
+  border: 1px solid var(--color-eternity);
+}
 .asterisk {
 	color: var(--color-red);
-}
-.errorMessage {
-	text-align: center;
-	font-weight: 300;
-	color: var(--color-red);
-}
-.successMessage {
-	text-align: center;
-	font-weight: 300;
 }

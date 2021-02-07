@@ -61,10 +61,10 @@
 				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9dc256c97fc9f62d15fb25bdb_b64293a551" tabindex="-1" value=""></div>
 				<label for="mce-EMAIL"><span class="asterisk">*</span> Email Address: </label>
-				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
 
 				<label for="mce-FNAME"><span class="asterisk">*</span> First Name: </label>
-				<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+				<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>
 
 				<label for="mce-LNAME">Last Name: </label>
 				<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
@@ -75,17 +75,8 @@
 					<input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="3" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"> 
 					( mm / dd )
 				</div>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="onEmailListFormSubmit(document.b64293a551.mce-EMAIL,document.b64293a551.mce-FNAME)">
 			</form>
-			<div id="error_email" class="errorMessage" style="display:none;">
-				<p>Email address is required.</p>
-			</div>
-			<div id="error_first_name" class="errorMessage" style="display:none;">
-				<p>First Name is required.</p>
-			</div>
-			<div id="success" class="successMessage" style="display:none;">
-				<p>Thank you for signing up!</p>
-			</div>
 <!-- End Mailchimp Signup Form -->
 		</div>
 	</div>
@@ -95,7 +86,7 @@
 		<a href="https://www.facebook.com/NatarajaYogaUSA/" target="_blank"><img width="48" height="48" alt="Facebook Link" src="images/fb.png"></a>
 	</div>
 <!-- end bbinclude -->
-	<script src="/scripts/email_list.js"></script>
+	<script src="/scripts/form.js"></script>
 	<script type="text/javascript">
 		setNavBreadcrumb(NAV_EMAIL);
 	</script>

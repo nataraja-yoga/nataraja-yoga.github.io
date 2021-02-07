@@ -61,28 +61,19 @@
 				<input type='hidden' name='redirect_to' value='https://nataraja-yoga.github.io/contact_success.html' />
 
 				<label for="email"><span class="asterisk">*</span> Email Address: </label>
-				<input id="email" name="email" type="text" />
+				<input id="email" name="email" type="email" required />
 
 				<label for="firstName"><span class="asterisk">*</span> First Name: </label>
-				<input id="firstName" name="firstName" type="text" />
+				<input id="firstName" name="firstName" type="text" required />
 
 				<label for="lastName">Last Name: </label>
 				<input id="lastName" name="lastName" type="text" />
 
-				<label for="message">Message: </label>
-				<textarea id="message" name="message" rows="10"></textarea>
+				<label for="message"><span class="asterisk">*</span> Message: </label>
+				<textarea id="message" name="message" rows="10" required></textarea>
 
 				<input class="button" type='submit' value='Send Message' />
 			</form>
-			<div id="error_email" class="errorMessage" style="display:none;">
-				<p>Email address is required.</p>
-			</div>
-			<div id="error_first_name" class="errorMessage" style="display:none;">
-				<p>First Name is required.</p>
-			</div>
-			<div id="success" class="successMessage" style="display:none;">
-				<p>Thank you for signing up!</p>
-			</div>
 		</div>
 	</div>
 <!-- #bbinclude "include_footer.html" -->
@@ -91,6 +82,7 @@
 		<a href="https://www.facebook.com/NatarajaYogaUSA/" target="_blank"><img width="48" height="48" alt="Facebook Link" src="images/fb.png"></a>
 	</div>
 <!-- end bbinclude -->
+	<script src="/scripts/form.js"></script>
 	<script type="text/javascript">
 		setNavBreadcrumb(NAV_CONTACT);
 	</script>
