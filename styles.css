@@ -4,34 +4,16 @@
 :root {
 	--color-black: #000000;
 	--color-white: #FFFFFF;
-
-/* 
-	--color-blue: #264653;
-	--color-yellow: #e9c46a;
-	--color-green: #2a9d8f;
-	--color-orange: #f4a261;
- */
-
 	--color-red: #e76f51;
 	
 	--color-apache: #DCBB73;
 	--color-eternity: #1D140B;
 	--color-congress-blue: #044F93;
 	--color-avocado: #868F67;
-
-	
-	
 }
 
 /*
 	General Styles
-	
-	Cinzel:wght@;500;;700;800;900
-	600 400 
-
-	Raleway:wght@100;200;300;;500;600;;800;900
-	
-	400 700 
 */
 body {
 	background-color: var(--color-white);
@@ -60,10 +42,6 @@ h2 {
 	color: var(--color-eternity);
 }
 
-/* For removing the margin on the first item in the copy column */
-.noTopMargin {
-	margin-top: 0px;
-}
 
 /*
 	Navigation
@@ -118,6 +96,10 @@ a.navBreadcrumb {
 	display: flex;
 	flex-direction: column;
 }
+/* For removing the margin on the first item in the copy column */
+.noTopMargin {
+	margin-top: 0px;
+}
 
 
 /* 
@@ -130,7 +112,7 @@ a.navBreadcrumb {
 
 
 /* 
-	Class List
+	Class List Grid
  */
 .classList {
 	align-self: center;
@@ -209,4 +191,5 @@ textarea:valid {
 }
 .asterisk {
 	color: var(--color-red);
+	font-weight: 700;
 }
